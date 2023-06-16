@@ -14,7 +14,7 @@ header {
     color: #fff;
 }
 
-header ul {
+.main-nav {
     display: flex;
     flex-direction: row;
     column-gap: 20px;
@@ -25,4 +25,90 @@ header ul {
 .main-nav a {
     text-decoration: none;
     color: #fff;
+}
+
+.main-nav__burger {
+    display: none;
+}
+
+.main-nav__burger-arrow {
+    display: none;
+}
+
+
+/*Burger*/
+
+@media screen and (max-width: 768px) {
+
+    header {
+        position: relative;
+    }
+
+    .main-nav { 
+        position: relative;
+        z-index: 10;
+        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 15px;
+
+        width: 300px;
+        padding: 10px 0;
+        margin-top: 255px;
+
+        background-color: black;
+
+        transition: all 0.7s ease;
+    }
+
+    .main-nav--hidden {
+        margin-top: -250px;
+        /*transition: all 0.7s ease;*/
+    }
+
+    .main-nav__burger {
+        position: relative;
+
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        width: 30px;
+        height: 20px; 
+        
+        cursor: pointer;
+    }
+
+    .main-nav__burger-arrow {
+        display: block;
+        width: 30px;
+        height: 3px;
+
+        background-color: #fff;
+
+        transition: all 0.5s ease;
+    }
+
+    /*Добавление классов на бургер при клике*/
+    .main-nav__burger-arrow-top {
+        position: absolute;
+        top: 9px;
+
+        transform: rotate(-45deg);
+    }
+
+    .main-nav__burger-arrow-bottom {
+        position: absolute;
+        bottom: 8px;
+
+        transform: rotate(45deg);
+    }
+
+    .main-nav__burger-arrow--hidden {
+        visibility: hidden;
+        transition: all 0s ease;
+    }
+    
+    /*Конец классов для бургера*/
 }

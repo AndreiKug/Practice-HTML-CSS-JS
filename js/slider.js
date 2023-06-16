@@ -1,8 +1,8 @@
-let sliderContainer = document.querySelectorAll('.slider-container');
-let slides = document.getElementsByClassName('slide');
-let sliderDots = document.getElementsByClassName('slider-dot');
-let arrowLeft = document.querySelector('.arrow-left');
-let arrowRight = document.querySelector('.arrow-right');
+const sliderContainer = document.querySelectorAll('.slider-container');
+const slides = document.getElementsByClassName('slide');
+const sliderDots = document.getElementsByClassName('slider-dot');
+const arrowLeft = document.querySelector('.arrow-left');
+const arrowRight = document.querySelector('.arrow-right');
 
 let sliderIndex = 1;
 

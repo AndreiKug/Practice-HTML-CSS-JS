@@ -8,25 +8,26 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
+    <header>     
         <a class="header-logo" href="#">Practice</a>
-        <ul class="main-nav">
-            <li><a href="./index.html">Slider</a></li>
-            <li><a href="./animations.html">Animations</a></li>
-            <li><a href="./form.html">Form</a></li>
-            <li><a href="./burger.html">Burger</a></li>
+
+        <ul class="main-nav main-nav--hidden">
+            <li class="main-nav__item main-nav__item--hidden"><a href="./index.html">Slider</a></li>
+            <li class="main-nav__item main-nav__item--hidden"><a href="./animations.html">Animations</a></li>
+            <li class="main-nav__item main-nav__item--hidden"><a href="./form.html">Form</a></li>
+            <li class="main-nav__item main-nav__item--hidden"><a href="./burger.html">Burger</a></li>
         </ul>  
+
+        <div class="main-nav__burger">
+            <div class="main-nav__burger-arrow"></div>
+            <div class="main-nav__burger-arrow"></div>
+            <div class="main-nav__burger-arrow"></div>
+        </div>
     </header>
 
 <main>
-    <form action="#" name="name-of-form" autocomplete="off">
-        <fieldset>
-            <legend>Заголовок формы</legend>
 
-        </fieldset>
-    </form>
 </main>
-
-    <script src="./scripts.js"></script>
+    <script src="./js/burger.js"></script>
 </body>
 </html>
